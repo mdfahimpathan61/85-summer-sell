@@ -24,6 +24,8 @@ function getPrice(data) {
 
     if (total > 0) {
         purchase.removeAttribute('disabled')
+        const discountTotalId = document.getElementById('total')
+             discountTotalId.innerText = total.toFixed(2);
 
         if (total >= 200) {
             couponBtn.removeAttribute('disabled')
@@ -36,6 +38,7 @@ function getPrice(data) {
         }
         else {
             couponBtn.setAttribute('disabled');
+             
             
         }
     }
