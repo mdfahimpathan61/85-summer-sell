@@ -53,8 +53,8 @@ document.getElementById('coupon-btn').addEventListener('click', function cpnBtn(
     const discount = total * percentise
 
 
-    discountId.innerText = discount;
-    discountTotalId.innerText = total - discount;
+    discountId.innerText = discount.toFixed(2);
+    discountTotalId.innerText = total.toFixed(2) - discount.toFixed(2);
 
 })
 
